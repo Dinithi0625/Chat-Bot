@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova AI Chatbot</title>
+    <!-- Google Fonts: Inter & Noto Sans Sinhala -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+Sinhala:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Glow Effects -->
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+
+    <div class="chat-wrapper">
+        <!-- Header -->
+        <header class="chat-header">
+            <div class="bot-profile">
+                <div class="avatar">
+                    <i class="fa-solid fa-robot"></i>
+                    <span class="online-dot"></span>
+                </div>
+                <div class="bot-details">
+                    <h2>Nova AI</h2>
+                    <p>Online • Ready to help</p>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button id="theme-btn" title="Change Theme">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <button id="clear-btn" title="Clear Chat">
+                    <i class="fa-solid fa-trash-can"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Chat Messages Area -->
+        <main class="chat-box" id="chat-box">
+            <div class="message bot-message">
+                <div class="msg-avatar"><i class="fa-solid fa-robot"></i></div>
+                <div class="msg-content">
+                    <p>ආයුබෝවන්! 👋 මම <strong>Nova AI</strong>. ඔයාට අද මගෙන් මොනවද දැනගන්න ඕනේ?</p>
+                    <span class="msg-time">Just now</span>
+                </div>
+            </div>
+        </main>
+
+        <!-- Quick Suggestion Chips -->
+        <div class="suggestions" id="suggestions">
+            <button class="chip">ඔයා කවුද? 🤖</button>
+            <button class="chip">විහිළු කතාවක් කියන්න 😂</button>
+            <button class="chip">වෙලාව කීයද? ⏰</button>
+            <button class="chip">Coding ගැන කියන්න 💻</button>
+        </div>
+
+        <!-- Input Area -->
+        <footer class="chat-input-area">
+            <input type="text" id="user-input" placeholder="මෙතන type කරන්න..." autocomplete="off">
+            <button id="send-btn" title="Send">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
